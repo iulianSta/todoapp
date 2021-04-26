@@ -1,14 +1,52 @@
 // Any code you will write for your website (in the future!) should go here
 // Add a to do task function
-const addTask = () => {
+const addTask = (e) => {
+  // Preventing the form sending information out aka Reloading the page
+  e.preventDefault(); // e stands from event
   let newTask = document.querySelector("#newTask").value;
+  // Checking my input if it has a text
   if (newTask != "") {
     let newLi = document.createElement("li");
     let text = document.createTextNode(newTask);
     newLi.appendChild(text);
-    document.querySelector(".pending").appendChild(newLi);
+    // Adding random colour to my list item
+    newLi.style.color = colorGen();
+    document.querySelector(".result").appendChild(newLi);
     document.querySelector("#newTask").value = "";
+    // Create new container and done and delete buttons
+    const newContainer = document.createElement("div");
+    const doneButton = document.createElement("button");
+    const deleteButton = document.createElement("button");
+    // Buttons value
+    doneButton.innerHTML = "✅";
+    deleteButton.innerHTML = "❌";
+    // Injecting the buttons into the container
+    newContainer.appendChild(doneButton);
+    newContainer.appendChild(deleteButton);
+    // Complete function
+    // toggle will check if the class name exist, will remove it and if it's not will add it
+    const check = () => newLi.classList.toggle("completed");
+    // const del = () => newLi.remove() ;
+    // Adding event listener to my buttons
+    deleteButton.addEventListener("click", () => newLi.remove());
+    doneButton.addEventListener("click", check);
   } else {
     document.querySelector("#newTask").placeholder = "Please add text";
   }
 };
+// Random colour generator in hexa number
+const colorGen = () => {
+  let result = "#";
+  let colorCode = "0123456789ABCDEF";
+  for (let i = 0; i < 6; i++) {
+    result += colorCode[Math.floor(Math.random() * 16)];
+  }
+  return result;
+};
+// Functional check which key the user is pressing
+const keyCheck = (event) => {
+  console.log(event);
+  if (e.key == "Enter") addToList();
+};
+// Adding event listener to the form
+document.querySelector("form").addEventListener("submit", addToList);
