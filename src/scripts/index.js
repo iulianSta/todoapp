@@ -23,6 +23,9 @@ const addTask = (e) => {
     // Injecting the buttons into the container
     newContainer.appendChild(doneButton);
     newContainer.appendChild(deleteButton);
+    // Adding class
+    doneButton.classList.add("done");
+    newLi.appendChild(newContainer);
     // Complete function
     // toggle will check if the class name exist, will remove it and if it's not will add it
     const check = () => newLi.classList.toggle("completed");
@@ -46,7 +49,7 @@ const colorGen = () => {
 // Functional check which key the user is pressing
 const keyCheck = (event) => {
   console.log(event);
-  if (e.key == "Enter") addToList();
+  if (e.key == "Enter") addTask();
 };
 // Adding event listener to the form
-document.querySelector("form").addEventListener("submit", addToList);
+document.querySelector("form").addEventListener("submit", addTask);
