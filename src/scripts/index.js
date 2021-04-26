@@ -6,7 +6,7 @@ const addTask = () => {
     let newLi = document.createElement("li");
     let text = document.createTextNode(newTask);
     newLi.appendChild(text);
-    document.querySelector(".result").appendChild(newLi);
+    document.querySelector(".pending").appendChild(newLi);
     document.querySelector("#newTask").value = "";
   } else {
     document.querySelector("#newTask").placeholder = "Please add text";
