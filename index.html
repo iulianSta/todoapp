@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Head- Meta info -->
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-16" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
     <title>To Do App</title>
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <div class="todo-app">
-      <div class="tasks">
-        <label for="new-task">Add a to do task</label>
-        <input id="newTask" name="userText" type="text" />
-        <button onclick="addTask()">Add</button>
-      </div>
-      <h3>Pending tasks</h3>
-      <ul class="pending"></ul>
-      <h3>Completed tasks</h3>
-      <ul class="completed"></ul>
-    </div>
+    <!-- H1 title -->
+    <h1>Today task's</h1>
+    <!-- Form -->
+    <form>
+      <!-- H3 to do tasks -->
+      <h3>Add a to-do tasks</h3>
+      <!-- Text input -->
+      <input type="text" name="userText" id="newTask" />
+      <!-- <button onclick="addTask()">Add</button> -->
+      <!-- Submit input -->
+      <input type="submit" value="Add" />
+    </form>
+    <!-- H3 my tasks -->
+    <h3>My tasks</h3>
+    <!-- Unordered list of tasks -->
+    <ul class="result"></ul>
+
     <!-- Your element goes here -->
     <!-- Custom scripts, edit above this line -->
     <script src="./scripts/index.js"></script>
