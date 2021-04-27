@@ -1,2 +1,11 @@
 //Import Layout files
+// Mobile
 @import "./mobile/mobile";
+// Tablet
+@import "./tablet/tablet";
+// Tablet Portrait mode
+@import "./portrait-mode/portrait";
+// Laptop / Desktop
+@import "./laptop-desktop/laptop-desktop";
+// Large Screen
+@import "./large-screen/large-screen";

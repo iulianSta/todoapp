@@ -1,0 +1,25 @@
+// Form
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+  height: 2em;
+  background-color: $green3;
+  width: 50%;
+  border-radius: 10px;
+  flex-flow: row wrap;
+  input[type="text"] {
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+  }
+  input[type="submit"] {
+    width: 2rem;
+    height: 1.5rem;
+    text-align: center;
+    color: $green1;
+    border: none;
+    border-radius: 5px;
+  }
+}
