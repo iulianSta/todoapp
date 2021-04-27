@@ -51,7 +51,7 @@ body {
   }
 
   li {
-    width: 50vw;
+    width: 45vw;
     height: 3rem;
     max-width: 50vw;
     word-wrap: break-word;
@@ -116,7 +116,7 @@ body {
   }
 
   li {
-    width: 50vw;
+    width: 45vw;
     height: 3rem;
     max-width: 50vw;
     word-wrap: break-word;
@@ -184,7 +184,7 @@ body {
   }
 
   li {
-    width: 50vw;
+    width: 45vw;
     height: 3rem;
     max-width: 50vw;
     word-wrap: break-word;
@@ -243,16 +243,18 @@ body {
     text-align: center;
   }
   form input[type=submit] {
-    width: 2rem;
+    width: 2.5rem;
     height: 1.5rem;
     text-align: center;
+    font-weight: bold;
     color: #169116;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
   }
 
   li {
-    width: 50vw;
+    width: 45vw;
     height: 3rem;
     max-width: 50vw;
     word-wrap: break-word;
@@ -270,6 +272,7 @@ body {
     margin-left: 0.5em;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
   }
   li.delete {
     color: red;
@@ -319,10 +322,11 @@ body {
     color: #169116;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
   }
 
   li {
-    width: 50vw;
+    width: 45vw;
     height: 3rem;
     max-width: 50vw;
     word-wrap: break-word;
@@ -340,6 +344,7 @@ body {
     margin-left: 0.5em;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
   }
   li.delete {
     color: red;
