@@ -1,6 +1,6 @@
 // List
 li {
-  width: 50vw;
+  width: 45vw;
   height: 3rem;
   max-width: 50vw;
   word-wrap: break-word;
@@ -17,6 +17,7 @@ li {
     margin-left: 0.5em;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
   }
   &.delete {
     color: $red;
