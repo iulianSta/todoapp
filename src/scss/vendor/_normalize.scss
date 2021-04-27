@@ -1,1 +1,15 @@
 // Normalize
+// All elements normalize
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// Body style
+body {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
